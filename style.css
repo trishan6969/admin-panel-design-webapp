@@ -1,0 +1,422 @@
+/* <================================ Importing fonts ================================> */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* <================================ Resetting CSS ================================> */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* <================================ Reusable CSS ================================> */
+
+.flexbox {
+  display: flex;
+}
+
+/* <================================ Navbar ================================> */
+.section_nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  width: 245.75px;
+  height: 89.8vh;
+  background-color: #212121;
+}
+
+/* <================================ Navbar Logo ================================> */
+.nav__logo {
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 35px;
+}
+
+.nav__logo--img {
+  width: 45%;
+}
+
+.nav__logo--text {
+  font-size: 0.8rem;
+  background-color: #ffde7d;
+  padding: 3% 6%;
+}
+
+/* <================================ Navbar Menus ================================> */
+.nav__menu-bar {
+  flex-direction: column;
+}
+
+/* <================================ Navbar Menus Div ================================> */
+.nav__park__info,
+.nav__reports,
+.nav__payments {
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+}
+
+/* <================================ Navbar Menus Sections ================================> */
+.nav__park__info__menus,
+.nav__reports__menus,
+.nav__payments__menus {
+  list-style-type: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* <================================ Navbar Menus Headings ================================> */
+.nav__park__info--heading,
+.nav__reports--heading,
+.nav__payments--heading {
+  font-size: 0.7rem;
+  color: #6d9886;
+  margin-bottom: 8px;
+}
+
+/* <================================ Navbar Menus Icons ================================> */
+.nav__park__info__menus--icon,
+.nav__reports__menus--icon,
+.nav__payments__menus--icon {
+  width: 15px;
+}
+
+/* <================================ Navbar Menus Icons Text ================================> */
+.nav__park__info__menus--icons_text,
+.nav__reports__menus--icons_text,
+.nav__payments__menus--icons_text {
+  font-size: 0.8rem;
+  gap: 20px;
+  align-items: center;
+}
+
+/* <================================ Navbar Menus User Info ================================> */
+.nav__menu--user {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 245.75px;
+  height: 10.2vh;
+  background-color: #212121;
+  border: none;
+  border-top: 1px solid #374b42;
+}
+
+/* User Pic */
+.nav__menu--user_pic {
+  width: 11%;
+}
+
+/* User Three Dot */
+.nav__menu--user_menu {
+  width: 6.6%;
+}
+
+/* User Name */
+.user--info__name {
+  font-size: 0.8rem;
+}
+
+/* User Email */
+.user--info__email {
+  font-size: 0.6rem;
+  color: #6d9886;
+}
+
+/* <================================ Statistics ================================> */
+.stats_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats {
+  background-color: #f8f7f1;
+  width: 28vw;
+  height: 52vh;
+  padding: 30px 50px 50px 50px;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 30px;
+}
+
+.stats_heading--title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.stats_heading--subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* <================================ Stats Popup ================================> */
+.stats__real_time_stats {
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+}
+
+/* Popup Value */
+.stats__real_time_stats--value {
+  font-weight: 500;
+}
+
+/* Popup Icon */
+.stats__real_time_stats--icon {
+  width: 15px;
+}
+
+/* <================================ Income, Expenses , Mid Price and Park Load ================================> */
+.detailed_stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  column-gap: 50px;
+}
+
+/* Sections */
+.expenses,
+.incomes,
+.middle_price,
+.park_load {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headings */
+.expenses_heading,
+.incomes_heading,
+.middle_price--heading,
+.park_load--heading {
+  gap: 10px;
+  font-size: 0.8rem;
+  font-weight: 550;
+  align-items: center;
+}
+
+/* Expenses and incomes icon */
+.price_heading--expenses-icon,
+.price_heading--incomes-icon {
+  width: 20px;
+}
+
+/* Expenses value color */
+.price_heading--expenses-value {
+  color: #59ce8f;
+}
+
+/* Incomes value color */
+.price_heading--incomes-value {
+  color: #ff1e00;
+}
+
+/* Headings */
+.total_expenses--heading,
+.total_incomes--heading,
+.middle_price--total--heading,
+.park_load--total--heading {
+  font-size: 0.7rem;
+  color: #a09f9f;
+}
+
+/* Values */
+.total_incomes--value,
+.total_expenses--value,
+.middle_price--total--value,
+.park_load--total--value {
+  font-weight: bold;
+}
+
+/* <================================ Order Details ================================> */
+.orders {
+  width: 28vw;
+  gap: 5px;
+  height: 37.8vh;
+  padding: 10px 50px 20px 50px;
+  background-color: #f8f7f1;
+  flex-direction: column;
+}
+
+/* Order Titles */
+.orders_title {
+  font-size: 1.2rem;
+  padding: 10px 0 15px 0;
+}
+
+/* <================================ Orders Bar Diagram Chart ================================> */
+.orders_chart {
+  width: 21.5vw;
+  height: 20vh;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-end;
+  border-left: 1px dashed black;
+  border-bottom: 1px dashed black;
+}
+
+/* <================================ Styling all bars ================================> */
+.bar {
+  width: 50px;
+  height: 100px;
+}
+
+.accepted_orders {
+  background-color: #223029;
+}
+
+.rejected_orders {
+  height: 40px;
+  background-color: #dc6962;
+}
+
+.pending_orders {
+  height: 80px;
+  background-color: #f09b73;
+}
+
+/* <================================ Styling Legends ================================> */
+.orders_chart--legend {
+  justify-content: space-evenly;
+}
+
+.accepted_legend,
+.rejected_legend,
+.pending_legend {
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.accepted_color {
+  background-color: #223029;
+  color: #223029;
+  font-size: 0.4rem;
+  padding: 0 2px;
+}
+
+.rejected_color {
+  background-color: #dc6962;
+  color: #dc6962;
+  font-size: 0.4rem;
+  padding: 0 2px;
+}
+
+.pending_color {
+  background-color: #f09b73;
+  color: #f09b73;
+  font-size: 0.4rem;
+  padding: 0 2px;
+}
+
+.accepted_title,
+.rejected_title,
+.pending_title {
+  font-size: 0.7rem;
+}
+
+.orders_percent {
+  font-size: 0.8rem;
+  justify-content: space-around;
+}
+
+/* <================================ Orders Footer ================================> */
+.orders_footer {
+  width: 28vw;
+  height: 10.2vh;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f1eee3;
+  font-weight: 600;
+}
+
+/* <================================ Hovers ================================> */
+.nav__park__info__menus--icons_text:hover,
+.nav__reports__menus--icons_text:hover,
+.nav__payments__menus--icons_text:hover,
+.user--info__name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.nav__menu--user_pic:hover,
+.nav__menu--user_menu:hover {
+  cursor: pointer;
+}
+
+/* mhyjfhfgmhyjg */
+.profits {
+  width: 100vw;
+  padding: 30px 50px 50px 50px;
+  flex-direction: column;
+}
+
+.profits__title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cars {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.online,
+.on-order,
+.awaiting,
+.available-cars {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cars__img {
+  width: 15vw;
+}
+
+.cars__stats {
+  gap: 50px;
+}
+
+.awaiting--icon,
+.online--icon,
+.on-order--icon {
+  width: 20px;
+}
+
+.cars__stats--title {
+  font-size: 0.9rem;
+}
+
+.cars__stats--value {
+  font-weight: bold;
+}
+
+.profit-dynamics {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profit-dynamics--title {
+  font-size: 1.2rem;
+}
+
+.dynamics-time,
+.dynamics-income,
+.dynamics-expenses {
+  font-size: 0.8rem;
+}
+
+.dynamics__stats {
+  gap: 35px;
+}
+
+.bold {
+  font-weight: bold;
+}

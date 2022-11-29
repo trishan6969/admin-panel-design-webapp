@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Zegal By Trishan</title>
+</head>
+
+<body>
+
+    <main class="main flexbox">
+        <div class="section_nav">
+            <nav class="nav">
+
+                <div class="nav__logo flexbox">
+                    <img src="assets/logo.png" alt="Zegal Logo" class="nav__logo--img">
+                    <div class="nav__logo--text">Admin</div>
+                </div>
+
+                <div class="nav__menu-bar flexbox">
+                    <div class="nav__park__info flexbox">
+                        <p class="nav__park__info--heading">Park info</p>
+                        <ul class="nav__park__info__menus flexbox">
+                            <li class="nav__park__info__menus--icons_text flexbox"> <img src="assets/dashboard.png"
+                                    alt="" class="nav__park__info__menus--icon"> Dashboard</li>
+                            <li class="nav__park__info__menus--icons_text flexbox"> <img src="assets/drivers.png" alt=""
+                                    class="nav__park__info__menus--icon"> Drivers</li>
+                            <li class="nav__park__info__menus--icons_text flexbox"> <img src="assets/cars.png" alt=""
+                                    class="nav__park__info__menus--icon"> Cars</li>
+                            <li class="nav__park__info__menus--icons_text flexbox"> <img src="assets/travels.png" alt=""
+                                    class="nav__park__info__menus--icon"> Travels</li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__reports flexbox">
+                        <p class="nav__reports--heading">Reports</p>
+                        <ul class="nav__reports__menus flexbox">
+                            <li class="nav__reports__menus--icons_text flexbox"> <img src="assets/payroll.png" alt=""
+                                    class="nav__reports__menus--icon"> Payrolls</li>
+                            <li class="nav__reports__menus--icons_text flexbox"> <img src="assets/taxi_reports.png"
+                                    alt="" class="nav__reports__menus--icon"> Taxi reports</li>
+                            <li class="nav__reports__menus--icons_text flexbox"> <img src="assets/productivity.png"
+                                    alt="" class="nav__reports__menus--icon"> Productivity</li>
+                        </ul>
+                    </div>
+
+                    <div class="nav__payments flexbox">
+                        <p class="nav__payments--heading">Payments</p>
+                        <ul class="nav__payments__menus flexbox">
+                            <li class="nav__payments__menus--icons_text flexbox"> <img src="assets/payments.png" alt=""
+                                    class="nav__payments__menus--icon"> Payment details</li>
+                            <li class="nav__payments__menus--icons_text flexbox"> <img src="assets/transaction.png"
+                                    alt="" class="nav__payments__menus--icon"> Transaction</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <div class="nav__menu--user flexbox">
+                <img src="assets/user.png" alt="" class="nav__menu--user_pic">
+                <div class="user--info">
+                    <p class="user--info__name">Trishan Wagle</p>
+                    <p class="user--info__email">mailtotrishan@gmail.com</p>
+                </div>
+                <img src="assets/menu.png" alt="" class="nav__menu--user_menu">
+            </div>
+
+        </div>
+
+
+        <section class="stats_section">
+
+            <div class="stats flexbox">
+
+                <div class="stats_heading">
+                    <p class="stats_heading--title">Statistics</p>
+                    <p class="stats_heading--subtitle">Today, 22 Nov 2022</p>
+                </div>
+
+                <div class="stats__real_time_stats flexbox">
+                    <img class="stats__real_time_stats--icon" src="assets/performance.png" alt="">
+                    <span class=" stats__real_time_stats--value">23% better performance</span>
+                </div>
+
+                <div class="detailed_stats">
+                    <div class="expenses flexbox">
+                        <div class="expenses_heading flexbox">
+                            <p class="price_heading--expenses">Expenses</p>
+                            <img src="assets/increase.png" alt="" class="price_heading--expenses-icon">
+                            <p class="price_heading--expenses-value">+25%</p>
+                        </div>
+
+                        <div class="total_expenses">
+                            <p class="total_expenses--heading">Total Price</p>
+                            <p class="total_expenses--value">$7,230.00</p>
+                        </div>
+                    </div>
+
+                    <div class="incomes flexbox">
+                        <div class="incomes_heading flexbox">
+                            <p class="price_heading--incomes">Income</p>
+                            <img src="assets/decrease.png" alt="" class="price_heading--incomes-icon">
+                            <p class="price_heading--incomes-value"> -10%</p>
+                        </div>
+
+                        <div class="total_incomes">
+                            <p class="total_incomes--heading">Total Price</p>
+                            <p class="total_incomes--value">$12,560.00</p>
+                        </div>
+                    </div>
+
+                    <div class="middle_price">
+                        <div class="middle_price--heading">
+                            <p class="price_heading">Middle Price</p>
+                        </div>
+
+                        <div class="middle_price--total">
+                            <p class="middle_price--total--heading">Amount per mile</p>
+                            <p class="middle_price--total--value">$24.00</p>
+                        </div>
+                    </div>
+
+
+                    <div class="park_load">
+                        <div class="park_load--heading">
+                            <p class="park_load--heading_title">Park Load</p>
+                        </div>
+
+                        <div class="park_load--total">
+                            <p class="park_load--total--heading">Number of cars</p>
+                            <p class="park_load--total--value">56 / 78</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="orders flexbox">
+
+                <p class="orders_title">Receiving Orders</p>
+
+                <div class="orders_chart flexbox">
+                    <div class="accepted_orders bar"></div>
+                    <div class="rejected_orders bar"></div>
+                    <div class="pending_orders bar"></div>
+                </div>
+
+                <div class="orders_chart--legend flexbox">
+
+                    <div class="accepted_legend flexbox">
+                        <p class="accepted_color">M</p>
+                        <p class="accepted_title">Accepted</p>
+                    </div>
+
+                    <div class="rejected_legend flexbox">
+                        <p class="rejected_color">M</p>
+                        <p class="rejected_title">Rejected</p>
+                    </div>
+
+                    <div class="pending_legend flexbox">
+                        <p class="pending_color">M</p>
+                        <p class="pending_title">Pending</p>
+                    </div>
+
+                </div>
+
+                <div class="orders_percent flexbox">
+                    <p class="per">75%</p>
+                    <p class="per">23%</p>
+                    <p class="per">60%</p>
+                </div>
+
+            </div>
+
+
+            <div class="orders_footer flexbox">
+                <p class="footer_title">Total Income</p>
+                <p class="footer_value">$12,870.00</p>
+            </div>
+
+        </section>
+
+
+        <section class="profits flexbox">
+            <p class="profits__title">Orders and profits</p>
+
+            <div class="cars flexbox">
+                <img src="assets/car-order.png" alt="" class="cars__img">
+
+                <div class="cars__stats flexbox">
+
+                    <div class="available-cars flexbox">
+                        <img src="assets/available-cars.png" alt="" class="online--icon">
+                        <p class="cars__stats--title">Cars available</p>
+                        <p class="cars__stats--value">57</p>
+                    </div>
+
+                    <div class="online flexbox">
+                        <img src="assets/online.png" alt="" class="online--icon">
+                        <p class="cars__stats--title">Cars on line</p>
+                        <p class="cars__stats--value">35</p>
+                    </div>
+
+                    <div class="on-order flexbox">
+                        <img src="assets/on-order.png" alt="" class="on-order--icon">
+                        <p class="cars__stats--title">On order</p>
+                        <p class="cars__stats--value">23</p>
+                    </div>
+
+                    <div class="awaiting flexbox">
+                        <img src="assets/awaiting.png" alt="" class="awaiting--icon">
+                        <p class="cars__stats--title">Awaiting</p>
+                        <p class="cars__stats--value">12</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="profit-dynamics flexbox">
+                <p class="profit-dynamics--title">Profit dynamics</p>
+                <div class="dynamics__stats flexbox">
+                    <p class="dynamics-time">Time: <span class="bold">11:35am</span></p>
+                    <p class="dynamics-income">Income: <span class="bold">$2,257.00</span></p>
+                    <p class="dynamics-expenses">Expenses: <span class="bold">$1,100.00</span></p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
