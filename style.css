@@ -354,7 +354,8 @@
 /* mhyjfhfgmhyjg */
 .profits {
   width: 100vw;
-  padding: 30px 50px 50px 50px;
+  gap: 10px;
+  padding: 30px 50px 0 50px;
   flex-direction: column;
 }
 
@@ -403,7 +404,13 @@
   gap: 15px;
 }
 
-.profit-dynamics--title {
+.orders-list {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profit-dynamics--title,
+.orders-list--title {
   font-size: 1.2rem;
 }
 
@@ -419,4 +426,61 @@
 
 .bold {
   font-weight: bold;
+}
+
+.profit-dynamics_graph {
+  height: 15vh;
+  /* background-color: red; */
+}
+
+.orders-list--table {
+  border-bottom: 1px solid #a09f9f;
+}
+
+.orders-list--table--heading {
+  justify-content: space-between;
+}
+
+.orders-list--table--heading_value {
+  font-size: 0.7rem;
+  color: #a09f9f;
+  padding-bottom: 10px;
+}
+
+.table-value {
+  font-size: 0.8rem;
+  font-weight: 550;
+}
+
+.orders_list--table_values {
+  justify-content: space-between;
+  /* gap: 50px; */
+  align-items: center;
+}
+
+.driver {
+  gap: 10px;
+  align-items: center;
+}
+
+.driver_img {
+  width: 30px;
+}
+
+.driver_status {
+  align-items: center;
+  gap: 5px;
+}
+
+.driver_status--img {
+  font-size: 0.5rem;
+  padding: 0.5px 2.5px;
+  background-color: #59ce8f;
+  color: #59ce8f;
+}
+
+.driver_num {
+  background-color: #374b42;
+  color: white;
+  padding: 0 5px;
 }
